@@ -1,0 +1,252 @@
+/* Global CSS Variables */
+:root {
+  /* Colors */
+  --primary-color: #5ea6f3; /* Example primary blue */
+  --secondary-color: #6c757d; /* Example secondary gray */
+  --text-color: #343a40; /* Dark text */
+  --background-color: rgb(197, 196, 196); /* Light Grey background */
+  --border-color: rgb(216, 114, 216); /* Light purple border */
+
+  /* Typography */
+  --font-family-base: 'Arial', sans-serif;
+  --font-size-base: 18px;
+  --line-height-base: 1.5;
+
+  /* Spacing */
+  --spacing-unit: 1rem; /* 16px by default */
+  --padding-small: calc(var(--spacing-unit) * 0.5); /* 0.5rem */
+  --padding-medium: var(--spacing-unit); /* 1rem */
+  --padding-large: calc(var(--spacing-unit) * 1.5); /* 1.5rem */
+
+}
+
+/* Base Body Styles */
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+/* Global Reset  */
+*, *::before, *::after {
+  box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+
+/* Example Usage of Variables */
+h1 {
+  color: var(--primary-color);
+  margin-bottom: var(--padding-medium);
+}
+
+header {
+  display: flex;
+  background-color: hsla(211, 86%, 66%, 66%);
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  margin: 0px;
+  z-index: 1;
+}
+
+#staff {
+  display: flex;
+  background-color: var(--secondary-color);
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  margin: 0px;
+}
+
+nav {
+  display: inline-flex;
+  width: 75%;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+#logo {
+  height: 66px;
+  width: 66px;
+}
+
+.icon {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  color: var(--text-color); 
+  padding: var(--padding-small) var(--padding-medium);
+  border: 1px solid var(--secondary-color);
+  border-radius: 50px;
+  cursor: pointer;
+  height: auto;
+  width: 15%;
+  text-align: center;
+  font-size: 1vw;
+  align-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 4px rgba(125, 203, 233, 0.4);
+  font-weight: bold;
+  box-shadow: 3px 2px 6px rgba(48, 127, 158, 1);
+}
+
+.button:hover {
+  opacity: 0.75;
+  border: 1px solid var(--border-color);
+  transition: transform 0.5s ease-in-out; 
+}
+
+.button2 {
+  display: flex;
+  justify-content: center;
+  background-color:  hsla(211, 86%, 66%, 85%);
+  color: var(--text-color); /* White text on primary button */
+  padding: var(--padding-small) var(--padding-medium);
+  border: 1px solid  rgba(94, 166, 243, 0.85);
+  border-radius: 50px;
+  cursor: pointer;
+  height: auto;
+  width: 15%;
+  text-align: center;
+
+  align-content: center;
+  align-items: center;
+
+  box-shadow: 3px 2px 6px rgba(27, 72, 121, 0.8);
+}
+
+.button2:hover {
+  opacity: 0.75;
+  border: 1px solid var(--border-color);
+  transition: transform 0.5s ease-in-out; 
+}
+
+.btext {
+  margin: 0;
+  padding: 0;
+  font-size: 1vw;
+  text-shadow: 2px 2px 4px rgba(125, 203, 233, 0.4);
+  font-weight: bold;
+}
+
+#cart {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+main {
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#sidebar {
+  background-color: rgb(66, 154, 189);
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 10%;
+  height: 100vh;
+  top: 70px;
+  left: 0px;
+}
+
+#side {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sbutton {
+  display: flex;
+  width: 100%;
+  height: 2%;
+  font-size: 1.2vw;
+  font-weight: bold;
+  text-decoration-line: underline;
+  align-items: center;
+  align-content: center;
+}
+
+#main {
+  height: 100px;
+  width: 100%;
+  background-image: url("../images/pharmacy.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100px;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+#lmain {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  position: absolute;
+  left: 10%;
+  justify-content: center;
+  z-index: 0;
+}
+
+.maint {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(245, 245, 245, 0.35);
+}
+
+.mtext100 {
+  width: 98%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  margin: 1%;
+}
+.mtext75 {
+  width: 73%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  margin: 1%;
+}
+
+.mtext50 {
+  width: 48%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  margin: 1%;
+}
+
+.mtext33 {
+  width: 31%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  margin: 1%;
+}
+
+.mtext25 {
+  width: 23%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  margin: 1%;
+}
