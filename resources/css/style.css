@@ -250,3 +250,7 @@ main {
   border-radius: 10px;
   margin: 1%;
 }
+
+#store {
+  display: none;
+}
